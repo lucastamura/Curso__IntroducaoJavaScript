@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js04_if.html</title>
+</head>
+<body>
+    
+    <h3>Ordenar valores em ordem crescente</h3>
+
+    <form name="FormOrdena" action="" method="post">
+        Digite o primeiro número...:
+        <input type="number" name="f_n1">
+        
+        <br>
+        
+        Digite o segundo número...:
+        <input type="number" name="f_n2" id="">
+
+        <br>
+
+        <input type="button" name="btn_ordena" value="Ordenar" onclick="ordenar()">
+    </form>
+
+    <script language = "JavaScript">
+        /*
+        Objetivo: Coletar dois valores digitados pelo usuário e apresentalos em ordem crecente
+        Método de entrada: método form do objeto document
+        Método de saída: método alert do objeto window*/
+
+        //Definição de variáveis
+
+        var js_n1;
+        var js_n2;
+        var js_n3;
+
+        //Processamento dos dados
+
+        function ordenar(){
+
+            //Entrada de dados
+
+            js_n1 = parseInt(document.FormOrdena.f_n1.value);
+            js_n2 = parseInt(document.FormOrdena.f_n2.value);
+
+
+            //Processamento dos dados
+
+            if(js_n1 > js_n2){
+                js_n3 = js_n1
+                js_n1 = js_n2
+                js_n2 = js_n3
+            }
+
+            window.alert('Número em ordem crescente: ' + js_n1 + ', ' + js_n2);
+        }
+
+
+    </script>
+
+
+</body>
+</html>
