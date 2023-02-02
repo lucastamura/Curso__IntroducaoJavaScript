@@ -13,3 +13,5 @@ Cod5 - https://condicionalsimplesif.netlify.app/
 Cod6 - https://condicionalcompostaifelse.netlify.app/
 
 Cod7 - https://calculodesalario.netlify.app/
+
+Cod8 - https://indicadordemes.netlify.app/
