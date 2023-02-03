@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js_confirm.html - confirm/if/else</title>
+</head>
+<body>
+  
+  <script language="JavaScript">
+    /*
+    OBJETIVO: Desenvolver um programa que faça o teste de execução de duas opções. 
+    Utilizando o método confirm, verificar o botão selecionado pelo usuário e apresentar a respectiva opção.
+    */
+    //Definição de Variáveis
+
+    var js_resp;
+
+    //Após o botão selecionado, js_resp responderá um valor lógico true ou false, sapturado pelo método confirm.
+    js_resp = window.confirm('Clique em um dos dois botões. ')
+
+    //Decisão Condicional Composta if/else comparado ao valor lógico true.
+    if (js_resp == true){
+      document.write('Você acionou o botão: <b>OK</b> !!!');
+    }
+    else{
+      document.write('Você acionou o botão:  <b>Cancelar</b> !!!')
+    }
+
+
+  </script>
+
+</body>
+</html>
